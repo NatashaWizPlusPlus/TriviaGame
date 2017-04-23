@@ -8,43 +8,87 @@ Don't forget to include a countdown timer.
  <html>
  <head>
  	<title></title>
- 	<link rel="stylesheet" type="text/css" src="assets/style/css">
+  <link rel="stylesheet" type="text/css" src="assets/css/style.css">
  	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
- <body>
- <div class="jumbotron" align="center">
-  <h1>Trivia!</h1>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button" id="startButton">Start!</a></p>
-<span id="seconds"></span>
-</div>
+<body>
+<div class="col-md-12">
+
+<div class="main" style="background-image: url('assets/images/bg-small.png')">
+
+<!-- <div class="cover black" data-color="black"></div> -->
+<!-- 
+ <div class="view" align="center" width="200px"> -->
+    <!--Intro content-->
+<!--     <div class="full-bg-img flex-center"> -->
+<!--       <div class="jumbotron" align="center"> -->
+              <center><h1>Trivia!</h1>
+              <p><a class="btn btn-primary btn-lg" class="btn btn-success" href="#" role="button" id="startButton">Start!</a></p>
+             <span id="seconds" font-size="130px"></span></center>
+      </div>
 
  <form>
 
-  <div class="history" align="center">
-  Where was Pocahontas born?<br>
-  <input type="radio" name="history" id="virginia">  Virginia
-  <input type="radio" name="history" id="gravesend">  Gravesend
-  <input type="radio" name="history" id="jamestown">  Jamestown
-  <input type="radio" name="history" id="russia">  Russia
-  </div>
-<br>
-  <div class="history-year" align="center">
-  Who did Pocahontas Marry?<br>
-  <input type="radio" name="history-year" id="johnsmith">  John Smith
-  <input type="radio" name="history-year" id="johnrolfe">  John Rolfe
-  <input type="radio" name="history-year" id="johnnywalker">  Johnny Walker
-  <input type="radio" name="history-year" id="jonbonjovi">  Jon Bon Jovi
-  </div>
-  
+        <div class="history" align="center">
+          <h3>Where was Pocahontas born?</h3><br>
+          <input type="radio" name="history" id="virginia"> Virginia
+          <input type="radio" name="history" id="gravesend">  Gravesend
+          <input type="radio" name="history" id="jamestown">  Jamestown
+          <input type="radio" name="history" id="russia">  Russia
+        </div>
+    <br>
+      <div class="history-man" align="center">
+        <h3>Who did Pocahontas Marry?</h3><br>
+        <input type="radio" name="history-man" id="johnsmith">  John Smith
+        <input type="radio" name="history-man" id="johnrolfe">  John Rolfe
+        <input type="radio" name="history-man" id="johnnywalker">  Johnny Walker
+        <input type="radio" name="history-man" id="jonbonjovi">  Jon Bon Jovi
+      </div>
+    <br>
+      <div class="history-name" align="center">
+        <h3>What was the real name of Pocahontas?</h3><br>
+        <input type="radio" name="history-name" id="matoaka">  Matoaka
+        <input type="radio" name="history-name" id="pocahontas">  Pocahontas
+        <input type="radio" name="history-name" id="aponi">  Aponi
+        <input type="radio" name="history-name" id="chilam">  Chilam
+      </div>
+
+    <br>
+      <div class="history-death" align="center">
+        <h3>Where did Pocahontas take her last breath?</h3><br>
+        <input type="radio" name="history-death" id="virginia"> Virginia
+          <input type="radio" name="history-death" id="gravesend">  Gravesend
+          <input type="radio" name="history-death" id="jamestown">  Jamestown
+          <input type="radio" name="history-death" id="russia">  Russia
+      </div>
+
+      <br>
+      <div class="history-age" align="center">
+        <h3>How old was she when she took her last breath?</h3><br>
+        <input type="radio" name="history-age" id="twenty-three"> 23
+          <input type="radio" name="history-age" id="seventeen">  17
+          <input type="radio" name="history-age" id="thirty-two">  32
+          <input type="radio" name="history-age" id="fourty">  40
+      </div>
 
 </form>
-<span id="correct"></span>
-<span id="incorrect"></span>
-<span id="unanswered"></span>
+         
+          <span id="correct"></span>
+          <span id="incorrect"></span>
+          <span id="unanswered"></span>
 
-
-<script type="text/javascript" src="assets/javascript/app.js"></script>
+    </div>
+    </div>
+  </div>
+<!--   </div> -->
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
  </body>
  </html>

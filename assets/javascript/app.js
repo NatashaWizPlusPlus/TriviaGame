@@ -19,7 +19,7 @@ $("#startButton").on("click", function(){
 
 //When start is clicked
 //Start the Timer with 120 seconds
-	var counter = 120;
+	var counter = 6;
 	setInterval(function(){
 		counter--;
 		if (counter >= 0){
@@ -59,20 +59,9 @@ $(".history").children().on("click", function(){
 	}
 
 })
-$(".history").children().on("click", function(){
-	// var vir = $(this).children().attr('id');
-	// console.log(vir);
-	if($(this).attr('id') == 'virginia'){
-		correctAnswer++;
-		span.innerHTML = correctAnswer;
-	}
-	else{
-		incorrect++;
-	}
+		
 
-})		
-
-$(".history-year").children().on("click", function(){
+$(".history-man").children().on("click", function(){
 	// var vir = $(this).children().attr('id');
 	// console.log(vir);
 	if($(this).attr('id') == 'johnrolfe'){
@@ -83,7 +72,46 @@ $(".history-year").children().on("click", function(){
 		incorrect++;
 	}
 
-})		
+})	
+
+$(".history-name").children().on("click", function(){
+	// var vir = $(this).children().attr('id');
+	// console.log(vir);
+	if($(this).attr('id') == 'matoaka'){
+		correctAnswer++;
+		span.innerHTML = correctAnswer;
+	}
+	else{
+		incorrect++;
+	}
+
+})
+
+$(".history-death").children().on("click", function(){
+	// var vir = $(this).children().attr('id');
+	// console.log(vir);
+	if($(this).attr('id') == 'gravesend'){
+		correctAnswer++;
+		span.innerHTML = correctAnswer;
+	}
+	else{
+		incorrect++;
+	}
+
+})
+
+$(".history-age").children().on("click", function(){
+	// var vir = $(this).children().attr('id');
+	// console.log(vir);
+	if($(this).attr('id') == 'twenty-three'){
+		correctAnswer++;
+		span.innerHTML = correctAnswer;
+	}
+	else{
+		incorrect++;
+	}
+
+})	
 
 // 		if("#history"=== radio.virginia){
 			

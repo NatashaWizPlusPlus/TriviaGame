@@ -1,0 +1,25 @@
+#seconds{
+	font-size: 60px;
+}
+
+.jumbotron {
+   background: rgb(200, 54, 54)!important; /* This is for ie8 and below */
+   background: rgba(200, 54, 54, 0.5)!important; 
+}
+
+/*.view{
+	background-image:"assets/images/bg-small.png";
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+h1{
+	text-align: center;
+}
+
+.col-md-6 col-md-offset-3{
+	background-color: white;
+}
