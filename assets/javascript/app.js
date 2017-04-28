@@ -14,12 +14,20 @@ var correctAnswer = 0;
 var incorrect=0;
 var unanswered=0;
 
+$(document).ready(function(){
+        $("#questions").hide();
+
+    $("#startButton").click(function(){
+        $("#questions").show();
+    });
+});
+
 
 $("#startButton").on("click", function(){
 
 //When start is clicked
 //Start the Timer with 120 seconds
-	var counter = 6;
+	var counter = 60;
 	setInterval(function(){
 		counter--;
 		if (counter >= 0){
@@ -36,8 +44,8 @@ $("#startButton").on("click", function(){
 			unanswered++;
 
 			span.innerHTML = "Correct Answer" + correctAnswer;
-			span.innerHTML = "Incorrect Answer" + incorrect;
 			span.innerHTML = "Unanswered" + unanswered;
+			span.innerHTML = "Incorrect Answer" + incorrect;
 		}
 	//Calling the function each second in miliseconds
 	},1000);
@@ -59,7 +67,8 @@ $(".history").children().on("click", function(){
 	}
 
 })
-		
+	
+
 
 $(".history-man").children().on("click", function(){
 	// var vir = $(this).children().attr('id');
